@@ -87,7 +87,6 @@ class TodoViewTestCase(TestCase):
         self.assertEqual(response.context['tasks'][0], task1)
         self.assertEqual(response.context['tasks'][1], task2)
 
-
     def test_index_post(self):
         client = Client()
         data = {'title': 'Test Task', 'due_at': '2024-06-30 23:59:59'}
